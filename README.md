@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# Muhammad Zeeshan Nazim - Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my projects, skills, and experience as a software developer and UI/UX designer.
 
-**URL**: https://lovable.dev/projects/4603a85d-9d1f-493c-8513-ce6f0bd110e9
+## 🚀 Featured Projects
 
-## How can I edit this code?
+### 1. Voxa AI
+An AI-powered tool designed to enhance spoken English while preserving the speaker's natural tone and emotions. Voxa AI processes speech and improves pronunciation, sentence flow, and overall clarity without making the voice sound artificial.
 
-There are several ways of editing your application.
+**Tech Stack**: React, TypeScript, Python, Speech Processing, Audio Processing, Model Integration
 
-**Use Lovable**
+### 2. SecureComm
+A secure messaging and file-sharing system with end-to-end encryption where private keys never leave the user's device. Features client-side encryption using Web Crypto API with AES-256-GCM, custom authenticated key-exchange, and protection against MITM and replay attacks.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4603a85d-9d1f-493c-8513-ce6f0bd110e9) and start prompting.
+**Tech Stack**: React, TypeScript, Web Crypto API, Node.js, Cryptography
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. Hostel Scout
+Complete UI/UX design for a hostel finder mobile app connecting hostel owners with students. Features intuitive interfaces for tenant management, facility discovery, real-time availability, and community features.
 
-**Use your preferred IDE**
+**Tech Stack**: Figma, UI/UX Design, Prototyping, User Research, Design Systems
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This portfolio is built with:
 
-Follow these steps:
+- **Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn-ui
+- **Animations**: Custom animations and interactions
+- **Deployment**: Web hosting
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📦 Installation & Setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repository
+git clone https://github.com/MuhammadZeeshanNazim/Portfolio_Website.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Navigate to project directory
+cd Portfolio_Website
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Create production build
+npm run build
 
-**Use GitHub Codespaces**
+# Preview production build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+Portfolio/
+├── src/
+│   ├── components/     # React components
+│   ├── data/          # Project data and content
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Utility functions
+│   └── pages/         # Page components
+├── public/            # Static assets
+└── README.md
+```
 
-This project is built with:
+## 🎨 Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- ✨ Modern and responsive design
+- 🎭 Smooth animations and transitions
+- 📱 Mobile-first approach
+- 🌙 Clean and professional UI
+- 🔗 Project case studies with detailed information
+- 📧 Contact form integration
+- 🔍 SEO optimized
 
-## How can I deploy this project?
+## 📧 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/4603a85d-9d1f-493c-8513-ce6f0bd110e9) and click on Share -> Publish.
+Feel free to reach out for collaborations or opportunities!
 
-## Can I connect a custom domain to my Lovable project?
+- **GitHub**: [MuhammadZeeshanNazim](https://github.com/MuhammadZeeshanNazim)
+- **Email**: [Your Email]
 
-Yes, you can!
+## 📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is open source and available under the [MIT License](LICENSE).
