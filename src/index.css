@@ -180,21 +180,21 @@ All colors MUST be HSL.
 
 @media only screen and (max-width: 56.25em) {
   .heading-primary {
-    font-size: 3rem;
-    letter-spacing: 1.5px;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .heading-primary {
     font-size: 2.5rem;
     letter-spacing: 1px;
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading-primary {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 @media only screen and (max-width: 28em) {
   .heading-primary {
-    font-size: 2rem;
-    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
   }
 }
