@@ -90,27 +90,6 @@ export const projects: Project[] = [
     tools: ["Figma", "UI/UX Design", "Prototyping", "User Research", "Design Systems", "Mobile Design"],
     projectLink: "https://www.figma.com/proto/cgFfsOpG7skQ4g5pEVhLPT/Untitled--Copy-?node-id=24-106&t=tHpyT8e5leJxpiwQ-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A106&show-proto-sidebar=1",
   },
-  {
-    id: "boreal-coffee",
-    title: "Boreal Coffee Clone",
-    description:
-      "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1000&h=600&fit=crop",
-    overview: {
-      description: [
-        "Boreal Coffee Clone is a meticulous recreation of the Boreal Coffee official website's frontend. This project was undertaken as a learning exercise to challenge my frontend development skills and attention to design detail.",
-        "The project involved carefully studying the original design, understanding the user interactions, and recreating every component from scratch. It was an excellent opportunity to practice modern CSS techniques, responsive design principles, and smooth animations.",
-        "This clone demonstrates my ability to replicate complex designs with pixel-perfect accuracy while maintaining clean, maintainable code. The project has been well-received in the developer community and showcases my commitment to quality craftsmanship.",
-      ],
-      highlights: [
-        "Pixel-perfect recreation of original design",
-        "Smooth animations and micro-interactions",
-        "Fully responsive across all screen sizes",
-        "Optimized performance and loading times",
-      ],
-    },
-    tools: ["HTML", "CSS", "JavaScript", "SASS", "Git"],
-    projectLink: "https://example.com",
-    githubLink: "https://github.com/example/boreal-coffee",
-  },
+
+  
 ];
