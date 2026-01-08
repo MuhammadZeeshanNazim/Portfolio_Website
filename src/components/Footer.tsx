@@ -99,27 +99,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 uppercase tracking-wider">Get In Touch</h4>
-            <ul className="space-y-4">
-              {contactInfo.map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.href}
-                    className="group flex items-start gap-3 text-gray-300 hover:text-white transition-colors"
-                  >
-                    <item.icon className="w-5 h-5 mt-0.5 text-purple-400 group-hover:text-purple-300 transition-colors" />
-                    <span className="text-sm">{item.text}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
         {/* Divider with gradient */}
         <div className="relative mb-6 sm:mb-8">

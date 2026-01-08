@@ -177,5 +177,9 @@ All colors MUST be HSL.
 }
 
 
-
-
+@media only screen and (max-width: 28em) {
+  .heading-primary {
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+  }
+}
