@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[110vh] flex items-center justify-center relative pt-20 pb-24 overflow-hidden"
+      className="min-h-[100vh] sm:min-h-[110vh] flex items-center justify-center relative pt-20 sm:pt-24 pb-16 sm:pb-24 overflow-hidden"
       style={{ backgroundColor: '#FAFAFA' }}
     >
       {/* Diamond Grid Background */}
@@ -31,7 +31,7 @@ const Hero = () => {
         size={3}
         countDesktop={60}
         countTablet={50}
-        countMobile={40}
+        countMobile={30}
         zIndex={1}
       />
       
@@ -41,16 +41,16 @@ const Hero = () => {
         beamColorClass="cyan-400"
       />
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <h1 className="heading-primary mb-8 leading-tight">
+      <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
+        <h1 className="heading-primary mb-6 sm:mb-8 leading-tight">
           HEY, I'M ZEESHAN NAZIM
         </h1>
-        <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto mb-12 leading-relaxed px-4">
+        <p className="text-sm sm:text-base md:text-lg text-foreground/80 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-4">
           A Software Engineer and Full Stack Developer building and managing Websites and Web
           Applications that leads to the success of the overall product
         </p>
         <Button
-          className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1"
           onClick={scrollToProjects}
         >
           PROJECTS

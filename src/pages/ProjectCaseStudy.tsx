@@ -65,7 +65,7 @@ const ProjectCaseStudy = () => {
 
       {/* Hero Section */}
       <section
-        className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24 pb-16"
+        className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-24 pb-12 sm:pb-16"
         style={{ backgroundColor: "#FAFAFA" }}
       >
         {/* Background Effects */}
@@ -76,28 +76,28 @@ const ProjectCaseStudy = () => {
           size={3}
           countDesktop={60}
           countTablet={50}
-          countMobile={40}
+          countMobile={30}
           zIndex={1}
         />
 
         <div
           ref={heroRef}
-          className={`container mx-auto px-6 max-w-4xl text-center relative z-10 fade-in ${
+          className={`container mx-auto px-4 sm:px-6 max-w-4xl text-center relative z-10 fade-in ${
             isVisible ? "fade-in-visible" : ""
           }`}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider mb-8 animate-fade-in-up">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase tracking-wider mb-6 sm:mb-8 animate-fade-in-up">
             {project.title}
           </h1>
 
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12 animate-fade-in-up animation-delay-200">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8 sm:mb-12 px-2 animate-fade-in-up animation-delay-200">
             {project.overview.description[0]}
           </p>
 
           {project.projectLink && (
             <div className="animate-fade-in-up animation-delay-400">
               <Button
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1"
                 asChild
               >
                 <a
@@ -105,7 +105,7 @@ const ProjectCaseStudy = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                   Project Link
                 </a>
               </Button>
@@ -115,8 +115,8 @@ const ProjectCaseStudy = () => {
       </section>
 
       {/* Project Image Section */}
-      <section className="py-20 relative" style={{ backgroundColor: "#FFFFFF" }}>
-        <div className="container mx-auto px-6 max-w-4xl">
+      <section className="py-12 sm:py-16 md:py-20 relative" style={{ backgroundColor: "#FFFFFF" }}>
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
           <div
             className={`relative group fade-in animation-delay-200 ${
               isVisible ? "fade-in-visible" : ""
@@ -125,12 +125,12 @@ const ProjectCaseStudy = () => {
             {/* Laptop Frame */}
             <div className="relative mx-auto max-w-2xl">
               {/* Screen */}
-              <div className="relative bg-[#2c2c2c] rounded-t-xl p-2 md:p-3 shadow-2xl">
+              <div className="relative bg-[#2c2c2c] rounded-t-lg sm:rounded-t-xl p-1.5 sm:p-2 md:p-3 shadow-2xl">
                 {/* Top bar with dots */}
-                <div className="flex items-center gap-1.5 mb-2 px-2">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                <div className="flex items-center gap-1 sm:gap-1.5 mb-1.5 sm:mb-2 px-1.5 sm:px-2">
+                  <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-red-500"></div>
+                  <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-yellow-500"></div>
+                  <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-green-500"></div>
                 </div>
                 {/* Screen content */}
                 <div className="relative bg-white rounded overflow-hidden shadow-inner">
@@ -143,7 +143,7 @@ const ProjectCaseStudy = () => {
               </div>
 
               {/* Laptop Base/Keyboard */}
-              <div className="relative h-8 md:h-10 bg-gradient-to-b from-[#d4d4d8] via-[#c9c9cd] to-[#b8b8bd] rounded-b-xl overflow-hidden">
+              <div className="relative h-6 sm:h-8 md:h-10 bg-gradient-to-b from-[#d4d4d8] via-[#c9c9cd] to-[#b8b8bd] rounded-b-xl overflow-hidden">
                 {/* Keyboard area with subtle grid pattern */}
                 <div className="absolute inset-0 opacity-40">
                   <div className="grid grid-cols-16 gap-[2px] p-2">
@@ -169,35 +169,35 @@ const ProjectCaseStudy = () => {
       {/* Project Details Section */}
       <section
         ref={overviewRef}
-        className="py-20 relative fade-in"
+        className="py-12 sm:py-16 md:py-20 relative fade-in"
         style={{ backgroundColor: "#FFFFFF" }}
       >
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
           {/* Project Overview */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-3xl font-bold text-foreground mb-8">
+          <div className="mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6 sm:mb-8">
               Project Overview
             </h2>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed">
               {project.overview.description.map((paragraph, index) => (
-                <p key={index} className="text-base md:text-lg">
+                <p key={index} className="text-sm sm:text-base md:text-lg">
                   {paragraph}
                 </p>
               ))}
 
               {project.overview.highlights && (
-                <div className="mt-10">
-                  <h3 className="text-xl font-semibold text-foreground mb-6">
+                <div className="mt-8 sm:mt-10">
+                  <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4 sm:mb-6">
                     Key Features:
                   </h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {project.overview.highlights.map((highlight, index) => (
                       <li
                         key={index}
-                        className="flex items-start text-base md:text-lg"
+                        className="flex items-start text-sm sm:text-base md:text-lg"
                       >
-                        <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0"></span>
+                        <span className="inline-block w-2 h-2 rounded-full bg-primary mt-1.5 sm:mt-2 mr-3 sm:mr-4 flex-shrink-0"></span>
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -208,16 +208,16 @@ const ProjectCaseStudy = () => {
           </div>
 
           {/* Tools Used */}
-          <div className="mb-16" ref={toolsRef}>
-            <h2 className="text-3xl md:text-3xl font-bold text-foreground mb-8">
+          <div className="mb-12 sm:mb-16" ref={toolsRef}>
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6 sm:mb-8">
               Tools-Skills Used
             </h2>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {project.tools.map((tool, index) => (
                 <div
                   key={index}
-                  className="group relative bg-white px-6 py-3.5 rounded font-semibold text-sm text-foreground/90 
+                  className="group relative bg-white px-4 sm:px-6 py-2.5 sm:py-3.5 rounded font-semibold text-xs sm:text-sm text-foreground/90 
                     shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_16px_rgba(168,85,247,0.15)]
                     transition-all duration-300 hover:-translate-y-1 overflow-hidden"
                 >
@@ -240,14 +240,14 @@ const ProjectCaseStudy = () => {
 
           {/* See Live */}
           <div>
-            <h2 className="text-3xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6 sm:mb-8">
               See Live
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               {project.projectLink && (
                 <Button
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1 w-full sm:w-auto"
                   asChild
                 >
                   <a
@@ -255,7 +255,7 @@ const ProjectCaseStudy = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" />
+                    <ExternalLink className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                     Project Link
                   </a>
                 </Button>
@@ -263,7 +263,7 @@ const ProjectCaseStudy = () => {
 
               {project.githubLink && (
                 <Button
-                  className="bg-foreground hover:bg-foreground/90 text-background font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1"
+                  className="bg-foreground hover:bg-foreground/90 text-background font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1 w-full sm:w-auto"
                   asChild
                 >
                   <a
@@ -271,7 +271,7 @@ const ProjectCaseStudy = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="mr-2 h-4 w-4" />
+                    <Github className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                     GitHub
                   </a>
                 </Button>
@@ -279,10 +279,10 @@ const ProjectCaseStudy = () => {
 
               <Button
                 variant="outline"
-                className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1"
+                className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md transition-all hover:-translate-y-1 w-full sm:w-auto"
                 onClick={() => navigate("/")}
               >
-                <ArrowLeft className="mr-2 h-4 w-4" />
+                <ArrowLeft className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                 Go Back
               </Button>
             </div>

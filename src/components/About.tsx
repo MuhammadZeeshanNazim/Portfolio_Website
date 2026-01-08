@@ -57,39 +57,39 @@ const About = () => {
     <section 
       id="about" 
       ref={sectionRef}
-      className="py-28 relative overflow-hidden"
+      className="py-16 sm:py-20 md:py-28 relative overflow-hidden"
       style={{ backgroundColor: '#F5F5F5' }}
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-700"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-700"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-[600px] sm:h-[600px] bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl relative z-10">
         {/* Header with animation */}
-        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-4xl font-semibold uppercase tracking-[0.3em] mb-6">
+        <div className={`text-center mb-12 sm:mb-16 md:mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-4 sm:mb-6">
             About Me
           </h2>
-          <div className="relative w-16 h-1 mx-auto bg-primary mb-8 overflow-hidden">
+          <div className="relative w-16 h-1 mx-auto bg-primary mb-6 sm:mb-8 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
           </div>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto px-4">
             Here you will find more information about me, what I do, and my current
             skills mostly in terms of programming and technology
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-24">
           {/* Left Column - Get to know me */}
           <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <h3 className="text-xl md:text-2xl font-semibold mb-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 sm:mb-8">
               Get to know me!
             </h3>
             
-            <div className="space-y-6 text-muted-foreground text-base leading-relaxed">
+            <div className="space-y-5 sm:space-y-6 text-muted-foreground text-sm sm:text-base leading-relaxed">
               <div className="relative pl-6 border-l-2 border-primary/30 hover:border-primary transition-colors duration-300 group">
                 <div className="absolute left-[-5px] top-2 w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
                 <p className="group-hover:text-foreground transition-colors duration-300">
@@ -118,15 +118,15 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-10 flex items-center gap-6">
+            <div className="mt-8 sm:mt-10 flex items-center gap-6">
               <Button
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1 hover:scale-105"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1 hover:scale-105"
                 onClick={() => {
                   const element = document.getElementById("contact");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <Rocket className="w-4 h-4 mr-2" />
+                <Rocket className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 CONTACT
               </Button>
             </div>
@@ -134,15 +134,15 @@ const About = () => {
 
           {/* Right Column - Skills */}
           <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <h3 className="text-xl md:text-2xl font-semibold mb-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 sm:mb-8">
               My Skills
             </h3>
             
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {skills.map((skill, index) => (
                 <div
                   key={skill}
-                  className="group relative bg-white px-6 py-3.5 rounded font-semibold text-sm text-foreground/90 
+                  className="group relative bg-white px-4 sm:px-6 py-2.5 sm:py-3.5 rounded font-semibold text-xs sm:text-sm text-foreground/90 
                     shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_16px_rgba(168,85,247,0.15)]
                     transition-all duration-300 hover:-translate-y-1 overflow-hidden"
                 >

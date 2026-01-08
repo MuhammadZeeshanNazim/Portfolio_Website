@@ -31,10 +31,10 @@ const Header = () => {
           : "bg-background/95 backdrop-blur-lg border-b border-border/30"
       }`}
     >
-      <div className="container mx-auto px-6 py-5">
+      <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection("home")}>
-            <div className="w-14 h-14 rounded-full border-2 border-foreground/20 overflow-hidden bg-gray-100">
+          <div className="flex items-center gap-2 sm:gap-3 cursor-pointer" onClick={() => scrollToSection("home")}>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full border-2 border-foreground/20 overflow-hidden bg-gray-100 flex-shrink-0">
               <img 
                 src="/profile.jpeg" 
                 alt="Muhammad Zeeshan Nazim" 
@@ -42,10 +42,10 @@ const Header = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg uppercase tracking-wider">
+              <span className="font-bold text-sm sm:text-base md:text-lg uppercase tracking-wider">
                 M. Zeeshan Nazim
               </span>
-              <span className="text-xs text-muted-foreground font-medium">Full Stack Developer</span>
+              <span className="text-[10px] sm:text-xs text-muted-foreground font-medium">Full Stack Developer</span>
             </div>
           </div>
 
@@ -71,28 +71,28 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden flex flex-col gap-2 mt-6 pb-4 bg-card/50 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-border/50">
+          <nav className="md:hidden flex flex-col gap-1 mt-4 pb-2 bg-card/50 backdrop-blur-md rounded-xl p-3 shadow-xl border border-border/50">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-sm font-semibold uppercase tracking-wide text-left px-4 py-3 rounded-lg hover:bg-foreground/5"
+              className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-left px-3 py-2.5 rounded-lg hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-sm font-semibold uppercase tracking-wide text-left px-4 py-3 rounded-lg hover:bg-foreground/5"
+              className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-left px-3 py-2.5 rounded-lg hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="text-sm font-semibold uppercase tracking-wide text-left px-4 py-3 rounded-lg hover:bg-foreground/5"
+              className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-left px-3 py-2.5 rounded-lg hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
             >
               Projects
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-sm font-semibold uppercase tracking-wide text-left px-4 py-3 rounded-lg hover:bg-foreground/5"
+              className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-left px-3 py-2.5 rounded-lg hover:bg-foreground/5 active:bg-foreground/10 transition-colors"
             >
               Contact
             </button>

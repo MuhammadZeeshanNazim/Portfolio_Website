@@ -33,29 +33,29 @@ const Projects = () => {
     <section 
       id="projects" 
       ref={sectionRef}
-      className="py-28 relative" 
+      className="py-16 sm:py-20 md:py-28 relative" 
       style={{ backgroundColor: '#FFFFFF' }}
     >
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
         {/* Header */}
-        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-4xl font-semibold uppercase tracking-[0.3em] mb-6">
+        <div className={`text-center mb-12 sm:mb-16 md:mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-4 sm:mb-6">
             Projects
           </h2>
-          <div className="relative w-16 h-1 mx-auto bg-primary mb-8 overflow-hidden">
+          <div className="relative w-16 h-1 mx-auto bg-primary mb-6 sm:mb-8 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
           </div>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto px-4">
             Here you will find some of the personal and clients projects that I
             created with each project containing its own case study
           </p>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-12 sm:space-y-16 md:space-y-20">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center transition-all duration-1000 delay-${index * 200} ${
+              className={`grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center transition-all duration-1000 delay-${index * 200} ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               } ${index % 2 === 1 ? "lg:grid-flow-dense" : ""}`}
             >
@@ -109,15 +109,15 @@ const Projects = () => {
 
               {/* Content */}
               <div className="flex flex-col justify-center">
-                <h3 className="text-xl md:text-2xl font-semibold mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-8 text-base leading-relaxed">
+                <p className="text-muted-foreground mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
                   {project.description}
                 </p>
                 <div>
                   <Button
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-12 py-6 text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 sm:px-12 py-5 sm:py-6 text-xs sm:text-sm uppercase tracking-wider rounded-md shadow-lg hover:shadow-2xl hover:shadow-primary/50 transition-all hover:-translate-y-1"
                     onClick={() => navigate(`/project/${project.id}`)}
                   >
                     Case Study
