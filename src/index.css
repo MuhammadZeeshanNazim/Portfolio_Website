@@ -172,14 +172,14 @@ All colors MUST be HSL.
 
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
 
 @media only screen and (max-width: 28em) {
   .heading-primary {
-    font-size: 1.5rem;
+    font-size: 3rem;
     letter-spacing: 0.3px;
   }
 }
